@@ -1,0 +1,371 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto'; 
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+nav {
+    background: #00b7ff;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: #fff;
+}
+
+nav a:hover{
+    color: #000000;
+}
+
+.logo{
+    flex: 1;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo a:hover{
+    color: #fff;
+}
+
+.logo img{
+    width: 80px;
+    margin-right: 20px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li{
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+
+    .menu.active, .toggle{
+        display: block;
+    }
+
+    .toggle{
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+    
+    .container-whey {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    .product-image {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    
+
+}
+/*  main   */
+.container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    
+}
+.destaque{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    gap:20px;
+    padding: 20px;
+}
+.avaliacoes, .main-head, .parte-calculadora {
+    background-color: #05CFFC;
+}
+
+.main-head {
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.left-head {
+    display: flex;
+    align-items: center;
+}
+
+.left-head h1, img {
+    padding-left: 20px;
+}
+
+.right-head {
+    margin-left: 1000px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#onBlueText {
+    color: #000000
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+a {
+    text-decoration-line: none;
+}
+.main-conteiner img{
+    
+    width: 500px;
+    height: auto;
+    padding: 50px;
+    max-width: 100%;
+    height: auto;
+    
+}
+.main-conteiner {
+    display: flex;
+   
+    padding-top: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.parte-calculadora {
+    padding-bottom: 65px;
+}
+
+.imc-calcular {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #05CFFC;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1267E7;
+}
+
+#resultado {
+    height: 140px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+}
+
+.avaliacoes {
+    padding: 10px;
+}
+
+
+
+/* cards de avaliação */
+.pessoa-avaliacao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+.card-ava {
+    width: 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.user-info h2 {
+    margin-top: 0;
+}
+
+.rating {
+    color: #ff9800;
+}
+
+.checked {
+    color: #ff9800;
+}
+
+.comment {
+    margin-top: 10px;
+}
+
+/* Estilos dos cards */
+.card-dest{
+    background-color: #7e7e7e;
+    padding: 30px;
+    border-radius: 10px;
+}
+.card-dest img{
+    width: 100%;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.price {
+    font-weight: bold;
+    color: #00b7ff;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #00b7ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*Footer*/
+
+.footer-content {
+    background-color: #00b7ff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.company-info h3 {
+    margin-top: 0;
+}
+
+.company-info p {
+    margin: 5px 0;
+}
+
+/* Whey */
+
+.container-whey {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  .product-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    justify-self: center;
+
+  }
+  .product-description {
+    margin-bottom: 20px;
+  }
+  .flavor-select {
+    margin-bottom: 20px;
+  }
+  .buy-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+  }
+  .buy-button:hover {
+    background-color: #45a049;
+}
+

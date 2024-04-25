@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>PowePro</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+           <a href="#"><img src="Imgs/logo.png" alt="logo"></a> 
+        </div>
+        <div class="toggle"><img src="Imgs/icons8-menu-50.png" alt="" name="menu-outline"></div>
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="loja.html">LOJA</a></li>
+            <li><a href="#teste">SOBRE</a></li>
+        </ul>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+
+            $(function(){
+                $(".toggle").on("click", function(){
+                    if($(".menu").hasClass("active")){
+                        $(".menu").removeClass("active");
+                        $(this).find("a").html("<ion-icon name='menu-outline'>logo</ion-icon>");
+                    } else{
+                        $(".menu").addClass("active");
+                        $(this).find("a").html("<ion-icon name='close-outline'>logo</ion-icon>");
+                    }
+                })
+            })
+
+        </script>
+    </nav>
+    </header>
+    <main>
+      
+    <section class="destaque">
+       <div class="card-dest">
+           <img src="Imgs/Eleve se1.png" alt="">
+        
+       </div>
+    </section>    
+        <h1><center>Produtos</center></h1>
+    <div class="container">
+       
+        <div class="card">
+            <img src="Imgs/Whey.jpeg" alt="Produto 1">
+            <h3>Whey PowerPro</h3>
+            <span class="price">R$ 99,99</span>
+            <a href="Whey.html"><button>Comprar</button></a>
+        </div>
+
+    
+        <div class="card">
+            <img src="Imgs/Creatina.jpeg" alt="Produto 2">
+            <h3>Creatina PowerPro</h3>
+            <span class="price">R$ 149,99</span>
+            <a href="Creatina.html"><button>Comprar</button></a>
+        </div>
+
+       
+        <div class="card">
+            <img src="Imgs/Pré-treino.jpeg" alt="Produto 3">
+            <h3>Pré-treino PowerPro</h3>
+            <span class="price">R$ 100</span>
+            <a href="Pretreino.html"><button>Comprar</button></a>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="Imgs/Multivitaminico.jpeg" alt="Produto 4">
+            <h3>Multivitaminico PowerPro</h3>
+            <span class="price">R$ 79,99</span>
+            <a href="multivitaminico.html"><button>Comprar</button></a>
+        </div>
+    </div>
+      
+    </main>
+    <footer>
+        <div class="footer-content" id="teste">
+            <div class="company-info">
+                <h3>Nome da Empresa: PowerPro Suplementos</h3>
+                <p>Endereço: Rua Energia Vital, 123, Bairro Fortaleça, Cidade Energética, Estado da Vitalidade, CEP: 12345-678</p>
+                <p>Telefone: (00) 1234-5678</p>
+                <p>E-mail: contato@powerprosuplementos.com</p>
+                <p>Horário de Funcionamento: Segunda a Sexta, das 9h às 18h; Sábado, das 9h às 13h</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

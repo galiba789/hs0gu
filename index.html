@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPro Suplementos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+               <a href="#"><img src="Imgs/logo.png" alt="logo"></a> 
+            </div>
+            <div class="toggle"><img src="Imgs/icons8-menu-50.png" alt="" name="menu-outline"></div>
+            <ul class="menu">
+                <li><a href="loja.html">LOJA</a></li>
+                <li><a href="#teste">CONTATO</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+            </ul>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script>
+    
+                $(function(){
+                    $(".toggle").on("click", function(){
+                        if($(".menu").hasClass("active")){
+                            $(".menu").removeClass("active");
+                            $(this).find("a").html("<ion-icon name='menu-outline'>logo</ion-icon>");
+                        } else{
+                            $(".menu").addClass("active");
+                            $(this).find("a").html("<ion-icon name='close-outline'>logo</ion-icon>");
+                        }
+                    })
+                })
+    
+            </script>
+        </nav>
+        </header>
+    <main>
+        <div class="main-conteiner">
+                <img src="Imgs/WhatsApp Image 2024-04-23 at 23.56.51.jpeg">
+            
+    
+        </div>
+        
+        <div class="parte-calculadora">
+            <h1 id="onBlueText">Calcular IMC</h1>
+            <br>
+            <p id="onBlueText">O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9. Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela:</p>
+            <br>
+            <div class="imc-calcular">
+                <form id="form-imc">
+                    <label for="sexo">SEXO</label>
+                    <select id="sexo" name="sexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                    <label for="altura">Altura (m):</label>
+                    <input type="number" id="altura" name="altura" step="0.01" placeholder="Altura em metros">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" name="peso" step="0.1" placeholder="Peso em quilogramas">
+                    <input type="submit" value="Calcular IMC" >
+                    <div id="resultado"></div>
+                </form>
+                <script src="script.js"></script>
+            </div>
+        </div>
+        <br>
+        <div class="avaliacoes">
+            <h1>Avaliações</h1>
+            <div class="card-conteiner">
+                <div class="pessoa-avaliacao">
+                    <div class="card-ava">
+                        <div class="user-info">
+                            <img src="Imgs/maria-foto.png" alt="Avatar do Usuário">
+                            <h2>Maria</h2>
+                        </div>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="comment">
+                            <p>Whey Protein PowerPro melhorou a minha recuperação pós-treino e tem um sabor delicioso.</p>
+                        </div>
+                    </div>
+    
+                    <div class="pessoa-avaliacao">
+                        <div class="card-ava">
+                            <div class="user-info">
+                                <img src="Imgs/joao-foto.png" alt="Avatar do Usuário">
+                                <h2>João</h2>
+                            </div>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="comment">
+                                <p>“PowerPro me ajudou a aumentar minha massa muscular magra e melhorar minha resistência durante os treinos.”</p>
+                            </div>
+                        </div>
+                    
+                        <div class="pessoa-avaliacao">
+                            <div class="card-ava">
+                                <div class="user-info">
+                                    <img src="Imgs/pedro-foto.png" alt="Avatar do Usuário">
+                                    <h2>Pedro</h2>
+                                </div>
+                                <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="comment">
+                                    <p>“PowerPro é eficaz, acessível e me deu energia extra para enfrentar meus treinos na academia.”</p>
+                                </div>
+                            </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="sobre-nos" id="sobre">
+            <h1>Sobre Nos</h1>
+            <p>PowerPro é uma empresa líder no mercado de suplementos, dedicada a fornecer produtos de alta qualidade para atletas e entusiastas do fitness em todo o mundo. Nossa missão é capacitar os indivíduos a alcançarem seu potencial máximo, fornecendo uma linha completa de suplementos nutricionais que impulsionam o desempenho, promovem a saúde e apoiam um estilo de vida ativo. Com uma combinação de pesquisa científica avançada, ingredientes premium e padrões de qualidade rigorosos, a PowerPro se destaca pela excelência em todos os aspectos. Desde proteínas de alta qualidade até fórmulas avançadas de pré e pós-treino, estamos comprometidos em ajudar nossos clientes a alcançarem seus objetivos de fitness e bem-estar. Junte-se a nós e experimente a diferença PowerPro em sua jornada para uma vida mais saudável e vibrante.</p>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <div class="footer-content" id="teste">
+            <div class="company-info">
+                <h3>Nome da Empresa: PowerPro Suplementos</h3>
+                <p>Endereço: Rua Energia Vital, 123, Bairro Fortaleça, Cidade Energética, Estado da Vitalidade, CEP: 12345-678</p>
+                <p>Telefone: (00) 1234-5678</p>
+                <p>E-mail: contato@powerprosuplementos.com</p>
+                <p>Horário de Funcionamento: Segunda a Sexta, das 9h às 18h; Sábado, das 9h às 13h</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

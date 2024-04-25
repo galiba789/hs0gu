@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+               <a href="#"><img src="Imgs/logo.png" alt="logo"></a> 
+            </div>
+            <div class="toggle"><img src="Imgs/icons8-menu-50.png" alt="" name="menu-outline"></div>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="loja.html">LOJA</a></li>
+                <li><a href="#teste">SOBRE</a></li>
+            </ul>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script>
+    
+                $(function(){
+                    $(".toggle").on("click", function(){
+                        if($(".menu").hasClass("active")){
+                            $(".menu").removeClass("active");
+                            $(this).find("a").html("<ion-icon name='menu-outline'>logo</ion-icon>");
+                        } else{
+                            $(".menu").addClass("active");
+                            $(this).find("a").html("<ion-icon name='close-outline'>logo</ion-icon>");
+                        }
+                    })
+                })
+    
+            </script>
+        </nav>
+        </header>
+        <main>
+            
+<div class="container-whey">
+    <img class="product-image" src="Imgs/Whey.jpeg" alt="Produto">
+    <div class="product-description">
+      <h2>Descrição do Produto</h2>
+      <p>O Whey PowerPro é um suplemento alimentar feito com proteína do soro do leite, conhecida como whey protein. Ele é amplamente utilizado por pessoas que buscam aumentar a massa muscular, melhorar a performance atlética e promover uma recuperação mais eficiente após o treino. Este produto fornece os aminoácidos essenciais necessários para o crescimento e reparo muscular, sendo ideal para atletas e entusiastas do fitness que desejam maximizar os resultados de seus treinos.</p>
+      <br>
+      <h2>Preço R$99,99</h2>
+    </div>
+    <div class="flavor-select">
+      <label for="flavor">Selecione o sabor:</label>
+      <select id="flavor" name="flavor">
+        <option value="sabor1">Vanila</option>
+        <option value="sabor2">Morango</option>
+        <option value="sabor3">Chocolate</option>
+      </select>
+    </div>
+    <a href="index.html">
+        <button class="buy-button">Comprar</button>
+
+    </a>
+  </div>
+        </main>
+        <footer>
+            <div class="footer-content" id="teste">
+                <div class="company-info">
+                    <h3>Nome da Empresa: PowerPro Suplementos</h3>
+                    <p>Endereço: Rua Energia Vital, 123, Bairro Fortaleça, Cidade Energética, Estado da Vitalidade, CEP: 12345-678</p>
+                    <p>Telefone: (00) 1234-5678</p>
+                    <p>E-mail: contato@powerprosuplementos.com</p>
+                    <p>Horário de Funcionamento: Segunda a Sexta, das 9h às 18h; Sábado, das 9h às 13h</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
